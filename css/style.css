@@ -1,0 +1,489 @@
+@charset "utf-8";
+body, html {
+    height: 100%;
+    margin: 0;
+}
+DIV#pankuzu_r {
+    max-width: 967px;
+    width: 100%;
+	height: auto;
+	margin: -5px auto 10px;
+	}
+DIV#pankuzu_r:after {
+	content: '';
+	display: block;
+	clear: both;
+	}
+.l-sns-list {
+	letter-spacing: -.4em;
+	float: right;
+	display: table;
+	table-layout: fixed;
+	margin: 0 -10px 0 0;
+	}
+.l-sns-item {
+	vertical-align: top;
+	letter-spacing: 0;
+	margin: 0 0 0 0;
+	display: table-cell;
+	padding: 0 10px 0 0;
+	}
+#BF-MK10 h2,#BF-MK10 h3,#BF-MK10 div,#BF-MK10 p,#BF-MK10 a,#BF-MK10 ol,#BF-MK10 li,#BF-MK10 span{
+font-family:"Sawarabi Mincho","游明朝", YuMincho, "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;
+font-weight: bold;
+}
+.top_pic .top_pc{
+    display: block;
+    max-width: 1200px;
+    width: 100%;
+    margin: 0;
+}
+.top_pic .top_sp{
+display: block;
+width: 100%;
+}
+@media screen and (min-width: 769px){
+	.top_pic .top_sp{
+		display: none;
+		}
+	}
+@media screen and (max-width: 768px){
+	.top_pic .top_pc{
+		display:none;
+		}
+	}
+.about_campaign{
+    overflow: hidden;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    padding: 2em 0;
+    position: relative;
+    background: #5b4c42;
+}
+.about_campaign_bg{
+    background: #30221c;
+    width: 200%;
+    height:50%;
+    transform: rotate(-10deg);
+    margin: auto;
+    position: absolute;
+    overflow: hidden;
+    z-index: 0;
+    top: 30%;
+    left:-20%;
+    }
+.about_campaign .about_campaign_txt_area{
+max-width: 400px;
+    width: 100%;
+    box-sizing: border-box;
+    z-index: 1;
+    background: rgba(0, 0, 0, 0.6);
+    border: 4px double #30221c;
+    color: #fff;
+    padding: 1em;
+}
+.about_campaign .about_campaign_txt_area .btn_buy{
+display: block;
+    max-width: 250px;
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    background: yellow;
+    color: #000035;
+    text-decoration: none;
+    padding: 0.5em;
+    box-shadow: 0 0 15px 2px yellow;
+    animation: blink 4s ease-out -1s infinite alternate;
+}
+@keyframes blink {
+  0%{
+    background:#ffc155;
+    box-shadow: 0 0 15px 2px #ffc155;
+  }
+  50%{
+    background:#f36845;
+    box-shadow: 0 0 15px 5px #f36845;
+  }
+  100%{
+    background:#ffc155;
+    box-shadow: 0 0 15px 2px #ffc155;
+  }
+}
+@media screen and (max-width: 426px){
+.about_campaign .about_campaign_txt_area .btn_buy{
+font-size:1.25em;
+padding:0.7em 0;
+}
+}
+.about_campaign .about_campaign_txt_area > p{
+font-size: 1.2em;
+color: #fff;
+line-height: 1.35;
+}
+@media screen and (max-width: 426px){
+.about_campaign .about_campaign_txt_area > p{
+font-size: 1.4em;
+margin: 1em;
+}
+}
+.about_campaign .about_campaign_pic{
+display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-end;
+    max-width: 400px;
+    width: 100%;
+    z-index:2;
+}
+.about_campaign .about_campaign_pic div img{
+    max-width: 150px;
+    width: 100%;
+    height:auto;
+    display: block;
+    margin: 1em;
+    filter:drop-shadow(6px 6px 4px #0a0706);
+}
+.retro_design{
+    background: url(../img/bg_retro_design.png) 0 0 repeat;
+    background-size: cover;
+    overflow: auto;
+    height: auto;
+    background-attachment: fixed;
+}
+@media screen and (max-width: 1024px){
+.retro_design{background-position:center;}
+}
+@media screen and (max-width: 426px){
+.retro_design{
+background-position:center;
+}
+}
+.retro_design .retro_design_txt_area{
+    max-width: 600px;
+    width: 100%;
+    margin: auto;
+    padding: 8em 2em;
+    background: rgba(0, 0, 0, 0.5);
+    overflow: auto;
+    box-sizing: border-box;
+    }
+.retro_design .retro_design_txt_area h2{
+    color: #fff;
+    text-align: center;
+    font-size: 2em;
+    border: none;
+    }
+.retro_design .retro_design_txt_area p{
+    color: #fff;
+    line-height: 1.5;
+}
+.retro_design .retro_design_txt_area h3{
+color: #fff;
+    font-size: 1.4em;
+    text-align: center;
+    margin: 0;
+}
+.retro_design .retro_design_txt_area .about_name{
+font-size: 0.9em;
+}
+.brightness{
+width:100%;
+margin:8em 0;
+}
+.retro_design .lamp_icon > img,.brightness .lamp_icon > img,.multi_use .lamp_icon > img,.evolta .lamp_icon > img{
+    display: block;
+    max-width: 150px;
+    width: 100%;
+    margin: auto;
+    background: yellow;
+    border-radius: 50%;
+    box-shadow: 0 0 5px 5px #ffff87;
+    animation: lamp_icon_blink 2s ease-out -1s infinite alternate;
+}
+@keyframes lamp_icon_blink {
+  0%{
+    box-shadow: 0 0 5px 5px #ffff87;
+  }
+  50%{
+    box-shadow: 0 0 5px 15px #ffff79;
+  }
+  100%{
+    box-shadow: 0 0 5px 5px #ffff87;
+  }
+}
+@media screen and (max-width:426px){
+.retro_design .lamp_icon > img,.brightness .lamp_icon > img,.multi_use .lamp_icon > img,.evolta .lamp_icon > img{
+max-width: 90px;
+}
+}
+#BF-MK10 div[class*="lamp_icon"]{
+opacity: 0;
+transition: all 1.4s;
+transition-delay: 0.2s;
+transform: scale(0.8);
+}
+#BF-MK10 div[class*="lamp_icon"].scrollin {
+opacity:1.0;
+transform: scale(1.0);
+}
+#BF-MK10 div[class*="multi_use_scene_txt"]{
+opacity: 0;
+transition: all 0.6s;
+transition-delay: 0.6s;
+}
+#BF-MK10 div[class*="multi_use_scene_txt"].fadein{
+opacity:1.0;
+}
+@media screen and (max-width: 426px){
+#BF-MK10 div[class*="lamp_icon"]{
+transition-delay:none;
+}
+#BF-MK10 div[class*="multi_use_scene_txt"]{
+transition-delay:none;
+}
+}
+.brightness h2{
+font-size: 2em;
+text-align: center;
+border: none;
+text-shadow: none;
+}
+.brightness h2 sup{
+font-size: 0.5em;
+vertical-align: super;
+}
+.brightness .brightness_features .brightness_feature_topic{
+display: flex;
+flex-direction: row;
+flex-wrap: wrap;
+justify-content: space-around;
+    max-width: 1000px;
+    width: 100%;
+    margin: auto;
+}
+.brightness .brightness_features .reverse{
+flex-direction: row-reverse;
+}
+.brightness_feature_topic_txt{
+    max-width: 500px;
+    width: 100%;
+        padding: 2em;
+    box-sizing: border-box;
+}
+.brightness .brightness_feature_topic_txt h3{
+    font-size: 1.8em;
+    color: #2f2f2f;
+        padding: 0;
+        margin: 0;
+}
+.brightness .brightness_feature_topic_txt p{
+margin: 1em 0;
+color: #2f2f2f;
+}
+
+.brightness_feature_topic_img >img{
+display: block;
+    max-width: 500px;
+    width: 100%;
+}
+.multi_use{
+width:100%;
+padding: 8em 0 0 0;
+background: #5b4c42;
+}
+.multi_use .multi_use_scene_txt{
+    max-width: 500px;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    overflow: auto;
+    padding: 10em 2em;
+    box-sizing: border-box;
+}
+.multi_use .multi_use_scene_txt h3{
+font-size:1.4em;
+color:#fff;
+padding: 0;
+margin: 1em 0;
+}
+.multi_use .multi_use_scene_txt p{
+color:#fff;
+margin: 1em 0;
+}
+.multi_use_scene .multi_use_scene_outdoor{
+    background: url(../img/bg_multiuse_outdoor.png) center repeat;
+    background-size: cover;
+    overflow: auto;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+.multi_use_scene .multi_use_scene_nightwalk{
+    background: url(../img/bg_multiuse_nightwalk.png) center repeat;
+    background-size: cover;
+    overflow: auto;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+.multi_use_scene .multi_use_scene_bedside{
+    background: url(../img/bg_multiuse_bedside.png) center repeat;
+    background-size: cover;
+    overflow: auto;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+.multi_use h2{
+font-size: 2em;
+text-align: center;
+color:#fff;
+border: none;
+text-shadow: none;
+}
+.belt_white{
+    width: 100%;
+    height: 20em;
+    background: #fff;
+}
+.evolta{
+    background: url(../img/bg_evolta.png) center repeat;
+    background-size: cover;
+    overflow: auto;
+    height: auto;
+    background-attachment: fixed;
+    padding: 100vh 0;
+}
+@media screen and (max-width: 426px){.evolta{padding:50vh 0;}}
+.evolta .evolta_txt_area{
+background: rgba(0, 0, 0, 0.8);
+overflow: auto;
+padding: 8em 0;
+}
+.evolta .evolta_txt_area sup{
+font-size:0.5em;
+vertical-align: super;
+}
+.evolta .evolta_txt_area h2{
+font-size:2em;
+text-align: center;
+    color: #fff;
+    border: none;
+    text-shadow: none;
+}
+.evolta .evolta_txt_area p{
+    max-width: 600px;
+    width: 100%;
+    margin: auto;
+    color: #fff;
+    font-size: 1.25em;
+}
+@media screen and (max-width: 426px){
+.evolta .evolta_txt_area p{
+max-width: 350px;
+font-size: 1em;
+}
+}
+.catalog{
+margin:8em 0;
+overflow: hidden;
+}
+.catalog .catalog_function{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: stretch;
+    border-bottom: 1px solid #f6aa00;
+    
+opacity:0;
+transform: translateX(300px);
+transition: all 0.6s;
+transition-delay: 0.6s;
+}
+@media screen and (max-width: 426px){
+.catalog .catalog_function{
+transition-delay:none;
+}
+}
+.catalog .catalog_function[data-custom="switch_onoff"]{
+justify-content: space-around;
+}
+.catalog .catalog_function:nth-of-type(even){
+flex-direction: row-reverse;
+transform: translateX(-300px);
+}
+.catalog .catalog_function.slidein{
+transform: translateX(0px);
+opacity:1.0;
+}
+.catalog .catalog_function .catalog_function_pic{
+}
+.catalog .catalog_function .catalog_function_pic >img{
+display:block;
+max-width:600px;
+width:100%;
+padding: 2em 0;
+}
+.catalog .catalog_function .catalog_function_pic >img[src*="switch_onoff"]{
+max-width: 400px;
+padding: 1em 0;
+}
+.catalog .catalog_function .catalog_function_txt{
+    max-width: 400px;
+    width: 100%;
+    text-align: center;
+    font-size: 2em;
+    background: #f6aa00;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.catalog .catalog_function .catalog_function_txt > p{
+padding: 1em;
+color: #00005a;
+}
+.bg_attention_note{
+background:#30221c;
+}
+.attention_note{
+    max-width: 800px;
+    width: 100%;
+    margin: auto;
+    padding: 5em 1em;
+    font-size: 0.7em;
+    color: #fff;
+    box-sizing: border-box;
+}
+.attention_note > ul{
+border: 4px double #fff;
+padding: 2em;
+}
+.attention_note > ul li {
+    font-weight: 300;
+    font-size: 1.15em;
+    line-height: 1.5;
+    color: #fff;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    counter-increment: number;
+}
+.attention_note > ul li:before {
+    content: "※"counter(number);
+    font-size: 1em;
+    display: inline-block;
+    margin: 0 1em 0 0;
+}
+/*検証環境のfooter*/
+.l-footer-contact-tel .tel img{
+	width:100%;
+	}
+#globalfooter-nav .pagetop{
+	width:100%;	
+	}
